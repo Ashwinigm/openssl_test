@@ -54,7 +54,7 @@
  */
 
 #  define lstat(path, buf) stat(path, buf)
-
+#test 
 int symlink(const char *target, const char *linkpath)
 {
     errno = ENOSYS;
