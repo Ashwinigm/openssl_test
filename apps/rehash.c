@@ -7,7 +7,6 @@
  * in the file LICENSE in the source distribution or at
  * https://www.openssl.org/source/license.html
  */
-
 #include "internal/e_os.h" /* LIST_SEPARATOR_CHAR */
 #include "apps.h"
 #include "progs.h"
@@ -55,6 +54,7 @@
 
 #  define lstat(path, buf) stat(path, buf)
 #test 
+#testtest
 int symlink(const char *target, const char *linkpath)
 {
     errno = ENOSYS;
