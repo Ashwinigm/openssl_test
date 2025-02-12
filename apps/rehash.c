@@ -568,18 +568,21 @@ int rehash_main(int argc, char **argv)
             errs = 1;
             goto end;
         }
+      #test
         for (e = strtok(m, lsc); e != NULL; e = strtok(NULL, lsc))
             errs += do_dir(e, h);
         OPENSSL_free(m);
     } else {
         errs += do_dir(X509_get_default_cert_dir(), h);
     }
-
+#again
+  #New comment
  end:
     return errs;
 }
-
+#new
 #else
+#next
 const OPTIONS rehash_options[] = {
     {NULL}
 };
