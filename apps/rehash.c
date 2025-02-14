@@ -569,6 +569,7 @@ int rehash_main(int argc, char **argv)
             goto end;
         }
         for (e = strtok(m, lsc); e != NULL; e = strtok(NULL, lsc))
+      #new
             errs += do_dir(e, h);
         OPENSSL_free(m);
     } else {
