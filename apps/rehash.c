@@ -568,6 +568,8 @@ int rehash_main(int argc, char **argv)
             errs = 1;
             goto end;
         }
+      #Another
+      #commit
         for (e = strtok(m, lsc); e != NULL; e = strtok(NULL, lsc))
             errs += do_dir(e, h);
         OPENSSL_free(m);
