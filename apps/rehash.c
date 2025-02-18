@@ -60,7 +60,7 @@ int symlink(const char *target, const char *linkpath)
     errno = ENOSYS;
     return -1;
 }
-//another comment
+
 ssize_t readlink(const char *pathname, char *buf, size_t bufsiz)
 {
     errno = ENOSYS;
@@ -571,7 +571,7 @@ int rehash_main(int argc, char **argv)
         for (e = strtok(m, lsc); e != NULL; e = strtok(NULL, lsc))
             errs += do_dir(e, h);
         OPENSSL_free(m);
- #test PR check
+ #test PR check  test case 5
     } else {
         errs += do_dir(X509_get_default_cert_dir(), h);
     }
