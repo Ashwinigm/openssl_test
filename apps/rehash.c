@@ -60,7 +60,7 @@ int symlink(const char *target, const char *linkpath)
     errno = ENOSYS;
     return -1;
 }
-
+//another comment
 ssize_t readlink(const char *pathname, char *buf, size_t bufsiz)
 {
     errno = ENOSYS;
