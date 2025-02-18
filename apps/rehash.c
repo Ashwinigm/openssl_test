@@ -571,6 +571,7 @@ int rehash_main(int argc, char **argv)
         for (e = strtok(m, lsc); e != NULL; e = strtok(NULL, lsc))
             errs += do_dir(e, h);
         OPENSSL_free(m);
+ #test PR
     } else {
         errs += do_dir(X509_get_default_cert_dir(), h);
     }
@@ -579,7 +580,7 @@ int rehash_main(int argc, char **argv)
     return errs;
 }
 
-#else
+#else block
 const OPTIONS rehash_options[] = {
     {NULL}
 };
