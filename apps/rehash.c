@@ -572,6 +572,8 @@ int rehash_main(int argc, char **argv)
             errs += do_dir(e, h);
         OPENSSL_free(m);
     } else {
+      ..
+      #commit
         errs += do_dir(X509_get_default_cert_dir(), h);
     }
 
